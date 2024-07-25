@@ -1,1 +1,68 @@
 // app global css in SCSS form
+@font-face {
+  font-family: helsadisplay;
+  src: url(./fonts/helsadisplay.otf);
+}
+
+// declare a class which applies it
+.font-helsa {
+  font-family: 'helsadisplay';
+}
+
+// Font-size
+.fs-52 {
+  font-size: 52px;
+}
+.fs-48 {
+  font-size: 48px;
+}
+.fs-36 {
+  font-size: 36px;
+}
+.fs-32 {
+  font-size: 32px;
+}
+.fs-28 {
+  font-size: 28px;
+}
+.fs-24 {
+  font-size: 24px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.fs-16 {
+  font-size: 16px;
+}
+
+// Font Weights
+.fw-900 {
+  font-weight: 900;
+}
+.fw-800 {
+  font-weight: 800;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.fw-300 {
+  font-weight: 300;
+}
+.fw-200 {
+  font-weight: 200;
+}
+.fw-100 {
+  font-weight: 100;
+}
