@@ -6,10 +6,16 @@
   font-family: helsadisplay;
   src: url(./fonts/helsadisplay.otf);
 }
-
+@font-face {
+  font-family: OPTILency;
+  src: url(./fonts/OPTILency.otf);
+}
 // declare a class which applies it
 .font-helsa {
   font-family: 'helsadisplay';
+}
+.font-opti {
+  font-family: 'OPTILency';
 }
 .font-radley {
   font-family: "Radley", serif;
@@ -27,6 +33,9 @@
 }
 .fs-36 {
   font-size: 36px;
+}
+.fs-34 {
+  font-size: 34px;
 }
 .fs-32 {
   font-size: 32px;

@@ -9,7 +9,7 @@
       <div class="fs-36 fw-600 text-center subtitle animate-flicker">
        The purpose of this facility is to be exclusive, and only ten applicants will be accepted as inmates within the facility at a time. The reasoning is not meant to be an elitist attitude, but the facility is not meant for everyone, and we want our guards to work intimately with the inmates, thus we cannot handle a large population of inmates.
       </div>
-      <ul class="q-mt-md fs-32 fw-600">
+      <ul class="q-mt-md fs-34 fw-500 font-opti">
         <li v-for="(rule, id) in rules" :key="id" class=" q-mt-sm">{{ rule }}</li>
       </ul>
     </div>
