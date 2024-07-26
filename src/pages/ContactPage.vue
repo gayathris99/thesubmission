@@ -5,9 +5,6 @@
       <div  class="cursor-pointer" @click="goTo('surrender')">SURRENDER</div>
       <div  class="cursor-pointer" @click="goTo('rules')">RULES</div>
     </div>
-    <div class="form">
-
-    </div>
   </div>
 </template>
 

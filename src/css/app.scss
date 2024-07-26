@@ -1,4 +1,7 @@
 // app global css in SCSS form
+@import url('https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+
 @font-face {
   font-family: helsadisplay;
   src: url(./fonts/helsadisplay.otf);
@@ -8,7 +11,13 @@
 .font-helsa {
   font-family: 'helsadisplay';
 }
-
+.font-radley {
+  font-family: "Radley", serif;
+  font-style: normal;
+}
+.font-gilda {
+  font-family: "Gilda Display", serif;
+}
 // Font-size
 .fs-52 {
   font-size: 52px;
@@ -69,4 +78,7 @@
 
 .color-white {
   color: white;
+}
+.color-black {
+  color: black;
 }
