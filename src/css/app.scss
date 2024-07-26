@@ -10,6 +10,10 @@
   font-family: OPTILency;
   src: url(./fonts/OPTILency.otf);
 }
+body, html {
+  height: 100%;
+}
+
 // declare a class which applies it
 .font-helsa {
   font-family: 'helsadisplay';

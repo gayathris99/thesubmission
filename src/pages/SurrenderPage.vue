@@ -9,27 +9,29 @@
       <div class="fs-36 fw-600 text-center subtitle animate-flicker">
         A one way ticket to the Black Site. <br/>Fill the details, clench your thighs shut and wait for your instructions.
       </div>
-      <!-- <q-card class="bg-white q-mt-lg color-black">
-        <q-card-section class="fw-900 font-radley">
-          <q-form>
-            <div class="row align-center justify-center q-gutter-x-sm">
-              <div class="col-5 fs-24">1. What days of the week are you usually on SL?</div>
-              <q-input class="col-6 fs-24" outlined></q-input>
-            </div>
-          </q-form>
-        </q-card-section>
-      </q-card> -->
-      <!-- <q-form>
-        <div class="row align-center justify-center q-gutter-x-sm font-radley q-mt-lg color-white">
-          <div class="col-5 fs-24">1. What days of the week are you usually on SL?</div>
-          <q-input v-model="daysOfWeek" class="color-white"></q-input>
+      <q-form class="form">
+        <div class="column align-center  q-gutter-x-xs q-mt-xl color-white fw-600 fs-36 subtitle ">
+          <div class="q-mb-sm">1. What days of the week are you usually on SL ?</div>
+          <q-input v-model="daysOfWeek" dark outlined  class="full-width fs-36 subtitle"></q-input>
         </div>
-      </q-form> -->
+        <div class="column align-center  q-gutter-x-xs q-mt-xl color-white fw-600 fs-36 subtitle ">
+          <div class="q-mb-sm">2. What days of the week are you usually on SL ?</div>
+          <q-input v-model="daysOfWeek" dark outlined  class="full-width fs-36 subtitle"></q-input>
+        </div>
+        <div class="column align-center  q-gutter-x-xs q-mt-xl color-white fw-600 fs-36 subtitle ">
+          <div class="q-mb-sm">3. What days of the week are you usually on SL ?</div>
+          <q-input v-model="daysOfWeek" dark outlined  class="full-width fs-36 subtitle"></q-input>
+        </div>
+        <div class="row items-center q-my-xl">
+          <q-btn label="Surrender" color="black" dense push class="full-width glossy subtitle fs-32 fw-700" @click="onSubmit"/>
+        </div>
+      </q-form>
     </div>
   </div>
 </template>
 
 <script>
+import axios from "axios";
 export default {
   name: 'SurrenderPage',
   data () {
@@ -42,6 +44,18 @@ export default {
       this.$router.push({
         name
       })
+    },
+    onSubmit (e) {
+      e.preventDefault();
+     axios.defaults.headers.post["Content-Type"] = "application/json";
+      axios
+        .post("https://formsubmit.co/ajax/misamai921@gmail.com", {
+          DaysOfWeekOnSL: this.daysOfWeek
+        })
+        .then((response) => {
+          console.log(response)
+        })
+        .catch((error) => console.log(error));
     }
   }
 }
@@ -50,10 +64,13 @@ export default {
 <style lang="scss" scoped>
 .bg-image {
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
-  height: 100vh;
   background-image: url('~assets/blackbackground.jpg');
+  overflow: hidden;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 .q-card {
   width: 100%;
@@ -62,8 +79,8 @@ export default {
 .subtitle {
   letter-spacing: 0.075rem;
 }
-.q-card-section {
-  width: 75%;
+.form {
+  width: 65vw
 }
 // .q-input {
 //   border-top: solid 1px white !important;
