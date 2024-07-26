@@ -32,6 +32,7 @@
 
 <script>
 import axios from "axios";
+import { Loading } from 'quasar'
 export default {
   name: 'SurrenderPage',
   data () {
@@ -48,14 +49,19 @@ export default {
     onSubmit (e) {
       e.preventDefault();
      axios.defaults.headers.post["Content-Type"] = "application/json";
+      Loading.show()
       axios
         .post("https://formsubmit.co/ajax/misamai921@gmail.com", {
           DaysOfWeekOnSL: this.daysOfWeek
         })
         .then((response) => {
           console.log(response)
+          Loading.hide()
         })
-        .catch((error) => console.log(error));
+        .catch((error) => {
+          console.log(error)
+          Loading.hide()
+        })
     }
   }
 }
@@ -82,35 +88,4 @@ export default {
 .form {
   width: 65vw
 }
-// .q-input {
-//   border-top: solid 1px white !important;
-//   border-left: solid 1px white !important;
-//   border-right: solid 1px white !important;
-// }
-// @keyframes flickerAnimation {
-//   0%   { opacity:1; }
-//   50%  { opacity:0; }
-//   100% { opacity:1; }
-// }
-// @-o-keyframes flickerAnimation{
-//   0%   { opacity:1; }
-//   50%  { opacity:0; }
-//   100% { opacity:1; }
-// }
-// @-moz-keyframes flickerAnimation{
-//   0%   { opacity:1; }
-//   50%  { opacity:0; }
-//   100% { opacity:1; }
-// }
-// @-webkit-keyframes flickerAnimation{
-//   0%   { opacity:1; }
-//   50%  { opacity:0; }
-//   100% { opacity:1; }
-// }
-// .animate-flicker {
-//    -webkit-animation: flickerAnimation 2s infinite;
-//    -moz-animation: flickerAnimation 2s infinite;
-//    -o-animation: flickerAnimation 2s infinite;
-//     animation: flickerAnimation 2s infinite;
-// }
 </style>
