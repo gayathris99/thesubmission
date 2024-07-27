@@ -3,6 +3,7 @@
     <div class="header row items-center align-center justify-center q-gutter-x-xl q-pt-xl fw-900 fs-48">
       <div class="cursor-pointer" @click="goTo('home')">HOME</div>
       <div  class="cursor-pointer" @click="goTo('rules')">RULES</div>
+      <div  class="cursor-pointer" @click="goTo('gallery')">GALLERY</div>
       <div  class="cursor-pointer" @click="goTo('contact')">CONTACT</div>
     </div>
     <div class="column align-center justify-center items-center q-mt-xl">

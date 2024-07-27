@@ -4,14 +4,14 @@
       <div class="cursor-pointer" @click="goTo('home')">HOME</div>
       <div  class="cursor-pointer" @click="goTo('surrender')">SURRENDER</div>
       <div  class="cursor-pointer" @click="goTo('rules')">RULES</div>
-      <div  class="cursor-pointer" @click="goTo('gallery')">GALLERY</div>
+      <div  class="cursor-pointer" @click="goTo('contact')">CONTACT</div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'ContactPage',
+  name: 'GalleryPage',
   methods: {
     goTo (name) {
       this.$router.push({
