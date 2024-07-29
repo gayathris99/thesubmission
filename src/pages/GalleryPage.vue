@@ -35,6 +35,9 @@
         <img src="~assets/TSMGallery/image7.png" alt="">
       </div>
       <div class="col-4 q-mt-xl">
+        <img src="~assets/TSMGallery/image22.png" alt="">
+      </div>
+      <div class="col-4 q-mt-xl">
         <img src="~assets/TSMGallery/image9.png" alt="">
       </div>
       <div class="col-4 q-mt-xl">
@@ -47,10 +50,16 @@
         <img src="~assets/TSMGallery/image19.png" alt="">
       </div>
       <div class="col-4 q-mt-xl">
+        <img src="~assets/TSMGallery/image23.png" alt="">
+      </div>
+      <div class="col-4 q-mt-xl">
         <img src="~assets/TSMGallery/image8.png" alt="">
       </div>
       <div class="col-4 q-mt-xl">
         <img src="~assets/TSMGallery/image4.png" alt="">
+      </div>
+      <div class="col-4 q-mt-xl">
+        <img src="~assets/TSMGallery/image24.png" alt="">
       </div>
       <div class="col-4 q-mt-xl">
         <img src="~assets/TSMGallery/image11.png" alt="">
