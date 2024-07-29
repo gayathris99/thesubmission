@@ -11,25 +11,28 @@
         <img src="~assets/TSMGallery/image1.png" alt="">
       </div>
       <div class="col-4 q-mt-xl">
+        <img src="~assets/TSMGallery/image20.png" alt="">
+      </div>
+      <div class="col-4 q-mt-xl">
+        <img src="~assets/TSMGallery/image15.png" alt="">
+      </div>
+      <div class="col-4 q-mt-xl">
         <img src="~assets/TSMGallery/image2.png" alt="">
       </div>
       <div class="col-4 q-mt-xl">
         <img src="~assets/TSMGallery/image3.png" alt="">
       </div>
       <div class="col-4 q-mt-xl">
-        <img src="~assets/TSMGallery/image4.png" alt="">
+        <img src="~assets/TSMGallery/image17.png" alt="">
+      </div>
+      <div class="col-4 q-mt-xl">
+        <img src="~assets/TSMGallery/image21.png" alt="">
       </div>
       <div class="col-4 q-mt-xl">
         <img src="~assets/TSMGallery/image5.png" alt="">
       </div>
       <div class="col-4 q-mt-xl">
-        <img src="~assets/TSMGallery/image6.png" alt="">
-      </div>
-      <div class="col-4 q-mt-xl">
         <img src="~assets/TSMGallery/image7.png" alt="">
-      </div>
-      <div class="col-4 q-mt-xl">
-        <img src="~assets/TSMGallery/image8.png" alt="">
       </div>
       <div class="col-4 q-mt-xl">
         <img src="~assets/TSMGallery/image9.png" alt="">
@@ -38,10 +41,25 @@
         <img src="~assets/TSMGallery/image10.png" alt="">
       </div>
       <div class="col-4 q-mt-xl">
+        <img src="~assets/TSMGallery/image6.png" alt="">
+      </div>
+      <div class="col-4 q-mt-xl">
+        <img src="~assets/TSMGallery/image19.png" alt="">
+      </div>
+      <div class="col-4 q-mt-xl">
+        <img src="~assets/TSMGallery/image8.png" alt="">
+      </div>
+      <div class="col-4 q-mt-xl">
+        <img src="~assets/TSMGallery/image4.png" alt="">
+      </div>
+      <div class="col-4 q-mt-xl">
         <img src="~assets/TSMGallery/image11.png" alt="">
       </div>
       <div class="col-4 q-mt-xl">
         <img src="~assets/TSMGallery/image12.png" alt="">
+      </div>
+      <div class="col-4 q-mt-xl">
+        <img src="~assets/TSMGallery/image16.png" alt="">
       </div>
       <div class="col-4 q-mt-xl">
         <img src="~assets/TSMGallery/image13.png" alt="">
@@ -50,10 +68,7 @@
         <img src="~assets/TSMGallery/image14.png" alt="">
       </div>
       <div class="col-4 q-mt-xl">
-        <img src="~assets/TSMGallery/image15.png" alt="">
-      </div>
-      <div class="col-4 q-mt-xl">
-        <img src="~assets/TSMGallery/image16.png" alt="">
+        <img src="~assets/TSMGallery/image18.png" alt="">
       </div>
     </div>
   </div>
@@ -67,10 +82,7 @@ export default {
       this.$router.push({
         name
       })
-    },
-  returnImage (index) {
-    return `~assets/TSMGallery/image${index+1}.png`
-  }
+    }
   },
 }
 </script>
