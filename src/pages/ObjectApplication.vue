@@ -180,6 +180,10 @@ export default {
           value: 'Object'
         },
         {
+          label: 'Couple Objects (Extreme RLV Inmates, strictly for female couples - you will be assigned to a twin cell, and your intake will occur with your partner. All other rules remain the same, but please make sure to include both of your details when filling out the form)',
+          value: 'Couple Object'
+        },
+        {
           label: 'Useful Object (Extreme RLV Inmates - may be granted temporary releases at the discretion of the deputy or warden. However, you will be required to return to complete your stay and cannot avoid being called back. 2 available positions, higher waiting period.)',
           value: 'Useful Object'
         },
