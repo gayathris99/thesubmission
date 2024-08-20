@@ -1,12 +1,17 @@
 <template>
   <q-page class="flex flex-center home">
-    <div class="content row items-center align-center justify-center q-gutter-x-xl q-pt-xl font-helsa fw-900 fs-48">
+    <div class="content row items-center align-center justify-center q-gutter-x-lg q-pt-xl font-helsa fw-900 fs-48">
       <div  class="cursor-pointer" @click="goTo('rules')">RULES</div>
+      <div  class="cursor-pointer" @click="goTo('requirements')">REQUIREMENTS</div>
       <div  class="cursor-pointer" @click="goTo('contact')">CONTACT</div>
       <div  class="cursor-pointer" @click="goTo('gallery')">GALLERY</div>
     </div>
-    <div class="bottom-content row items-center align-center justify-center q-pb-xl q-mb-md font-helsa fw-900 fs-48">
-      <div class="cursor-pointer" @click="goTo('surrender')">SURRENDER  &nbsp; HERE</div>
+    <div class="bottom-content column items-center align-center justify-center q-pb-lg q-mb-md font-helsa fw-900">
+      <div class="fs-52">SURRENDER  &nbsp; HERE</div>
+      <div class="row items-center justify-evenly q-gutter-x-xl align-center text-red">
+        <div class="cursor-pointer fs-36" @click="goTo('trainers')">TRAINERS</div>
+        <div class="cursor-pointer fs-36" @click="goTo('objects')">OBJECTS</div>
+      </div>
     </div>
     <video autoplay muted loop id="myVideo">
       <source src="~assets/TheSubMission.mp4" type="video/mp4">
