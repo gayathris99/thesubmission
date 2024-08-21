@@ -125,7 +125,7 @@ export default {
         axios.defaults.headers.post["Content-Type"] = "application/json";
           Loading.show()
           axios
-            .post("https://formsubmit.co/ajax/misamai921@gmail.com", {
+            .post("https://sheetdb.io/api/v1/eedc97o2lpo81", {
               ApplicationType: 'Trainer',
               UserName: this.userName,
               Age: this.userAge,
@@ -150,6 +150,32 @@ export default {
               console.log(error)
               Loading.hide()
             })
+          // axios
+          //   .post("https://formsubmit.co/ajax/misamai921@gmail.com", {
+          //     ApplicationType: 'Trainer',
+          //     UserName: this.userName,
+          //     Age: this.userAge,
+          //     DaysOfWeekOnSL: this.daysOfWeek,
+          //     RegularOnlineHours: this.onlineHours,
+          //     TimeZone: this.timeZone,
+          //     MinimumRequirementList: this.minimumRequirementList,
+          //     FormAcknowledgement: this.formAcknowledgement
+          //   })
+          //   .then((response) => {
+          //     Loading.hide()
+          //     this.$q.notify({
+          //       color: 'red',
+          //       message: 'You are one step closer to Hell.',
+          //       caption: 'You\'ll hear from us soon.',
+          //       position: "top",
+          //       classes: 'font-opti fs-32 fw-700 text-center'
+          //     })
+          //     this.$router.push({ name: 'rules' })
+          //   })
+          //   .catch((error) => {
+          //     console.log(error)
+          //     Loading.hide()
+          //   })
       }
     }
   },
