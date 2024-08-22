@@ -125,7 +125,7 @@ export default {
         axios.defaults.headers.post["Content-Type"] = "application/json";
           Loading.show()
           axios
-            .post("https://sheetdb.io/api/v1/eedc97o2lpo81", {
+            .post("https://formsubmit.co/ajax/misamai921@gmail.com", {
               ApplicationType: 'Trainer',
               UserName: this.userName,
               Age: this.userAge,
