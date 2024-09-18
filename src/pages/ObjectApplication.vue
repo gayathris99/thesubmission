@@ -51,8 +51,7 @@
           dark
           outlined
           class="full-width fs-36 subtitle font-opti"
-          :rules="[val => !!val || 'Field is required',
-          val => val.match(/^[0-9]+$/) || 'Only numbers allowed']"/>
+          :rules="[val => !!val || 'Field is required']"/>
         </div>
 
         <div class="column align-center  q-gutter-x-xs q-mt-xl color-white fw-600 fs-36 subtitle ">
