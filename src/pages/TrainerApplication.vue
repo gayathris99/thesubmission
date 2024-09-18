@@ -50,7 +50,7 @@
           class="full-width fs-36 subtitle font-opti"
           :rules="[val => !!val || 'Field is required']"/>
         </div>
-
+        <!-- Commit check -->
         <div class="column align-center  q-gutter-x-xs q-mt-xl color-white fw-600 fs-36 subtitle ">
           <div class="q-mb-sm"><span class="font-opti">5.</span> What is your timezone?</div>
           <q-input
