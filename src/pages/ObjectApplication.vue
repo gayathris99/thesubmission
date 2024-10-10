@@ -207,41 +207,50 @@ export default {
         name
       })
     },
+    getFormData (object) {
+      return Object.keys(object).reduce((formData, key) => {
+          formData.append(key, object[key]);
+          return formData;
+      }, new FormData());
+    },
     onSubmit (e) {
       e.preventDefault()
       if (this.isAllValid) {
-        axios.defaults.headers.post["Content-Type"] = "application/json";
           Loading.show()
-          axios
-            .post("https://formsubmit.co/ajax/misamai921@gmail.com", {
-              ApplicationType: 'Object',
-              UserName: this.userName,
-              Age: this.userAge,
-              DaysOfWeekOnSL: this.daysOfWeek,
-              RegularOnlineHours: this.onlineHours,
-              TimeZone: this.timeZone,
-              DefaultFacilityLimit: this.defaultFacilityLimit,
-              SelectedProgram: this.selectedProgram,
-              SelectedPosition: this.selectedPosition,
-              StayInIsolation: this.stayInIsolation,
-              MinimumRequirementList: this.minimumRequirementList,
-              FormAcknowledgment: this.formAcknowledgement
-            })
-            .then((response) => {
-              Loading.hide()
-              this.$q.notify({
-                color: 'red',
-                message: 'You are one step closer to Hell.',
-                caption: 'You\'ll hear from us soon.',
-                position: "top",
-                classes: 'font-opti fs-32 fw-700 text-center'
-              })
-              this.$router.push({ name: 'rules' })
-            })
-            .catch((error) => {
-              console.log(error)
-              Loading.hide()
-            })
+          fetch('https://script.google.com/macros/s/AKfycbzIekQqeH74MP2Gliu835m1lAlyC4y1yj9fbivhjiI7GWgo_cX3j9V3WqBVQkde48Ru/exec',
+                  {
+                method: "POST",
+                body: this.getFormData({
+                      ApplicationType: 'Object',
+                      UserName: this.userName,
+                      Age: this.userAge,
+                      DaysOfWeekOnSL: this.daysOfWeek,
+                      RegularOnlineHours: this.onlineHours,
+                      TimeZone: this.timeZone,
+                      DefaultFacilityLimit: this.defaultFacilityLimit,
+                      SelectedProgram: this.selectedProgram,
+                      SelectedPosition: this.selectedPosition,
+                      StayInIsolation: this.stayInIsolation,
+                      MinimumRequirementList: this.minimumRequirementList,
+                      FormAcknowledgment: this.formAcknowledgement
+                    })
+              }
+          ).then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+      Loading.hide()
+          this.$q.notify({
+            color: 'red',
+            message: 'You are one step closer to Hell.',
+            caption: 'You\'ll hear from us soon.',
+            position: "top",
+            classes: 'font-opti fs-32 fw-700 text-center'
+          })
+        this.$router.push({ name: 'rules' })
       }
     }
   }

@@ -118,13 +118,22 @@ export default {
         name
       })
     },
+    getFormData (object) {
+      return Object.keys(object).reduce((formData, key) => {
+          formData.append(key, object[key]);
+          return formData;
+      }, new FormData());
+    },
     onSubmit (e) {
       e.preventDefault();
       if (this.isAllValid) {
         axios.defaults.headers.post["Content-Type"] = "application/json";
           Loading.show()
-          axios
-            .post("https://formsubmit.co/ajax/misamai921@gmail.com", {
+
+          fetch('https://script.google.com/macros/s/AKfycbwMXvndemIp7q7jXBXHheTDDyKfuDPFwIqhCJ3uU3XPEeeGUh_UwklRuPAL9TVCZ5A/exec',
+                  {
+                method: "POST",
+                body: this.getFormData({
               ApplicationType: 'Trainer',
               UserName: this.userName,
               Age: this.userAge,
@@ -134,21 +143,23 @@ export default {
               MinimumRequirementList: this.minimumRequirementList,
               FormAcknowledgement: this.formAcknowledgement
             })
-            .then((response) => {
-              Loading.hide()
-              this.$q.notify({
-                color: 'red',
-                message: 'You are one step closer to Hell.',
-                caption: 'You\'ll hear from us soon.',
-                position: "top",
-                classes: 'font-opti fs-32 fw-700 text-center'
-              })
-              this.$router.push({ name: 'rules' })
-            })
-            .catch((error) => {
-              console.log(error)
-              Loading.hide()
-            })
+              }
+              ).then((res) => res.json())
+          .then((data) => {
+            console.log(data);
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+          Loading.hide()
+          this.$q.notify({
+            color: 'red',
+            message: 'You are one step closer to Hell.',
+            caption: 'You\'ll hear from us soon.',
+            position: "top",
+            classes: 'font-opti fs-32 fw-700 text-center'
+          })
+        this.$router.push({ name: 'rules' })
       }
     }
   },
