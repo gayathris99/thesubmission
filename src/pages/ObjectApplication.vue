@@ -217,7 +217,7 @@ export default {
       e.preventDefault()
       if (this.isAllValid) {
           Loading.show()
-          fetch('https://script.google.com/macros/s/AKfycbzIekQqeH74MP2Gliu835m1lAlyC4y1yj9fbivhjiI7GWgo_cX3j9V3WqBVQkde48Ru/exec',
+          fetch('https://script.google.com/macros/s/AKfycbzmOs4nNI_8tM9H5Sw7C8MN8_SHU1AsxuFwBdqIQ2Nn1DV9JIMkU29srfqm2VujxgNr/exec',
                   {
                 method: "POST",
                 body: this.getFormData({

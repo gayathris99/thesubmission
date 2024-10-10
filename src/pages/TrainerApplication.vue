@@ -130,7 +130,7 @@ export default {
         axios.defaults.headers.post["Content-Type"] = "application/json";
           Loading.show()
 
-          fetch('https://script.google.com/macros/s/AKfycbwMXvndemIp7q7jXBXHheTDDyKfuDPFwIqhCJ3uU3XPEeeGUh_UwklRuPAL9TVCZ5A/exec',
+          fetch('https://script.google.com/macros/s/AKfycbw-6pbOC_KlqGLsSmeHwVlUz98j-kUszVfpsRhYfeywrKZsLg9pQHVnYmgeagU7_JN2/exec',
                   {
                 method: "POST",
                 body: this.getFormData({
