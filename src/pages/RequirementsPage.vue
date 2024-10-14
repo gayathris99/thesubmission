@@ -36,7 +36,7 @@ export default {
     return {
       objectRequirements: [
         'Mesh AVI (Head & Body - Ruth body and head will not match the criteria).',
-        'Must own RR Police cuffs + Applicable gag (SCOwners and other restraints a plus).',
+        'Must own RR Police cuffs/Vixen/Elegance + Applicable gag & PMOS/SCOwners mandatorily added to all RR items.',
         'Configured and accessible RLV folder.',
         'Must have consent from your Master/Mistress.',
         'Above 90 days old in SL and 18+ in RL.',
