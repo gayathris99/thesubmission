@@ -79,7 +79,6 @@
           <div class="q-gutter-sm">
             <q-radio v-model="selectedProgram" dark val="Slave Training" label="Slave Training" class="font-opti fw-500" />
             <q-radio v-model="selectedProgram" dark val="Kidnap/Abduction" label="Kidnap/Abduction" class="font-opti fw-500" />
-            <q-radio v-model="selectedProgram" dark val="Dominatrix Adjustment." label="Dominatrix Adjustment." />
           </div>
         </div>
 
@@ -175,19 +174,19 @@ export default {
       selectedPosition: 'Object',
       selectedPositionOptions: [
         {
-          label: 'Object (Extreme RLV Inmates - you will be limited to the facility for the course of your stay. 6 available positions, high waiting period.)',
+          label: 'Object (Extreme RLV Inmates - Limited to the facility. High waiting period)',
           value: 'Object'
         },
+        // {
+        //   label: 'Couple Objects (Extreme RLV Inmates, strictly for female couples - you will be assigned to a twin cell, and your intake will occur with your partner. All other rules remain the same, but please make sure to include both of your details when filling out the form)',
+        //   value: 'Couple Object'
+        // },
+        // {
+        //   label: 'Useful Object (Extreme RLV Inmates - may be granted temporary releases at the discretion of the deputy or warden. However, you will be required to return to complete your stay and cannot avoid being called back. 2 available positions, higher waiting period.)',
+        //   value: 'Useful Object'
+        // },
         {
-          label: 'Couple Objects (Extreme RLV Inmates, strictly for female couples - you will be assigned to a twin cell, and your intake will occur with your partner. All other rules remain the same, but please make sure to include both of your details when filling out the form)',
-          value: 'Couple Object'
-        },
-        {
-          label: 'Useful Object (Extreme RLV Inmates - may be granted temporary releases at the discretion of the deputy or warden. However, you will be required to return to complete your stay and cannot avoid being called back. 2 available positions, higher waiting period.)',
-          value: 'Useful Object'
-        },
-        {
-          label: 'Facility Maid (Limited RLV Playthings tasked with assisting objects and helping with cleaning, among other duties. 2 available positions.)',
+          label: 'Facility Maid (Limited RLV Playthings) - Not confined to the facility, these individuals engage in menial tasks such as assisting objects, performing cleaning duties, and serving as toys for trainers when objects are unavailable. They occupy a sub-leaning switch position.',
           value: 'Facility Maids'
         }
       ],

@@ -35,9 +35,9 @@ export default {
       rules: [
         'Objects will always keep their RLV on auto, cheating out will result in an automatic ban. In case of emergencies, send a notecard to the warden of the facility, and they reserve the right to decide what constitutes as an emergency.',
         'Objects will need to change their names as they lose the rights to their personal identies during their incarceratation.',
-        'Objects will be allowed an IM time of 30 minutes a day with one-time visitor access.',
+        'Objects will be allowed a visitor every three days.',
         'Objects will be incarcerated a maximum of one week - RL time, additional sentencing may be added based on their behavior.',
-        'Objects must own RR Police Set as a minimum requirement for restraints, and - "Deluxe gag or similar" is a minimum requirement for gags; and other restraints will be an added bonus along with SCOwners or similar if you possses already. TSM will not provide objects any wearable restraints.',
+        'Objects must own RR Police Set/Vixen/RR Elegance as a minimum requirement for restraints, and - "Deluxe gag or similar" is a minimum requirement for gags and other restraints will be an added bonus along with SCOwners/PMOS if you possses already. TSM will not provide objects any wearable restraints.',
         'Objects must have a mesh body and a mesh head.',
         'Objects must understand that this is an extreme RLV and realism focused facility and all outside access will be cut-off with the exception of the warden.',
         'Objects will only be allowed to communicate with trainers and other objects in local and local OOC will be the only source of communication in case of emergencies.',

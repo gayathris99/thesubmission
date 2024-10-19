@@ -10,7 +10,7 @@
       <div class="fs-52">SURRENDER  &nbsp; HERE</div>
       <div class="row items-center justify-evenly q-gutter-x-xl align-center text-red">
         <div class="cursor-pointer fs-36" @click="goTo('trainers')">TRAINERS</div>
-        <div class="cursor-pointer fs-36" @click="goTo('objects')">OBJECTS</div>
+        <div class="cursor-pointer fs-36" @click="goTo('objects')">OBJECTS <span class="font-opti">/</span> MAIDS</div>
       </div>
     </div>
     <video autoplay muted loop id="myVideo">
