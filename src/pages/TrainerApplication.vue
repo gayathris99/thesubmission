@@ -127,13 +127,13 @@ export default {
     onSubmit (e) {
       e.preventDefault();
       if (this.isAllValid) {
-        axios.defaults.headers.post["Content-Type"] = "application/json";
           Loading.show()
 
-          fetch('https://script.google.com/macros/s/AKfycbw-6pbOC_KlqGLsSmeHwVlUz98j-kUszVfpsRhYfeywrKZsLg9pQHVnYmgeagU7_JN2/exec',
-                  {
+          fetch('https://script.google.com/macros/s/AKfycbw5qGrBDbKgwWpSAiM-eGvDtGvEkA-EWfYxnZYODmb0GrP1UTL3LG-jWQ9K-vvlUs4D/exec',
+            {
                 method: "POST",
                 body: this.getFormData({
+              TimeStamp: new Date(),
               ApplicationType: 'Trainer',
               UserName: this.userName,
               Age: this.userAge,
